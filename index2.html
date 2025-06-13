@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Three Column Layout</title>
+  <title>Three Column Layout with Only Divs</title>
   <style>
     * {
       margin: 0;
@@ -14,21 +14,23 @@
       font-family: Arial, sans-serif;
     }
 
-    header, footer {
+    .box {
       padding: 20px;
       color: white;
       text-align: center;
+      font-size: 24px;
+      font-weight: bold;
     }
 
-    header {
+    .top {
       background-color: #00bfff; /* Blue */
     }
 
-    footer {
+    .bottom {
       background-color: #9932cc; /* Purple */
     }
 
-    .content {
+    .middle {
       display: flex;
       height: 403px;
     }
@@ -36,36 +38,30 @@
     .left {
       flex: 1;
       background-color: #ff4500; /* Red */
-      padding: 20px;
-      color: white;
     }
 
-    .main {
+    .center {
       flex: 2;
       background-color: #32cd32; /* Green */
-      padding: 20px;
-      color: white;
     }
 
     .right {
       flex: 1;
       background-color: #ffd700; /* Yellow */
-      padding: 20px;
-      color: white;
     }
   </style>
 </head>
 <body>
 
-  <header><h1>Header</h1></header>
+  <div class="box top">Header</div>
 
-  <div class="content">
-    <div class="left"><h1>Left sidebar</h1></div>
-    <div class="main"><h1>Main content</h1></div>
-    <div class="right"><h1>Right sidebar</h1></div>
+  <div class="middle">
+    <div class="box left">Left sidebar</div>
+    <div class="box center">Main content</div>
+    <div class="box right">Right sidebar</div>
   </div>
 
-  <footer><h1>Footer</h1></footer>
+  <div class="box bottom">Footer</div>
 
 </body>
 </html>
