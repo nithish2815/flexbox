@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout with Flexbox</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header, footer {
+      background-color: #97cd0a;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .main {
+      display: flex;
+      height: 440px; /* Fixed height for layout demo */
+    }
+
+    article {
+      flex: 3;
+      background-color: white;
+      padding: 20px;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #fcfadc;
+      padding: 20px;
+    }
+
+    nav {
+      flex: 1;
+      background-color: #d8ebd8;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Header</header>
+
+  <div class="main">
+    <article>Article</article>
+    <aside>Aside</aside>
+    <nav>Nav</nav>
+  </div>
+
+  <footer>Footer</footer>
+
+</body>
+</html>

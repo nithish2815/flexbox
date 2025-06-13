@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Three Column Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header, footer {
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: #00bfff; /* Blue */
+    }
+
+    footer {
+      background-color: #9932cc; /* Purple */
+    }
+
+    .content {
+      display: flex;
+      height: 403px;
+    }
+
+    .left {
+      flex: 1;
+      background-color: #ff4500; /* Red */
+      padding: 20px;
+      color: white;
+    }
+
+    .main {
+      flex: 2;
+      background-color: #32cd32; /* Green */
+      padding: 20px;
+      color: white;
+    }
+
+    .right {
+      flex: 1;
+      background-color: #ffd700; /* Yellow */
+      padding: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header><h1>Header</h1></header>
+
+  <div class="content">
+    <div class="left"><h1>Left sidebar</h1></div>
+    <div class="main"><h1>Main content</h1></div>
+    <div class="right"><h1>Right sidebar</h1></div>
+  </div>
+
+  <footer><h1>Footer</h1></footer>
+
+</body>
+</html>

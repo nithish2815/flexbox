@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sample Flexbox Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff; /* dark background */
+      margin: 0;
+      padding: 20px;
+    }
+
+    .title-box {
+      background-color: #800080; /* purple like in image */
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background-color: cyan;
+      padding: 20px;
+      width: 400px;
+      box-sizing: border-box;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .box h3 {
+      margin-top: 0;
+      color: #000;
+    }
+
+    .box p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title-box">Sample flexbox example</div>
+
+  <div class="flex-container">
+    <div class="box">
+      <h3>First article</h3>
+      <p>
+        Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack...
+      </p>
+    </div>
+    <div class="box">
+      <h3>Second article</h3>
+      <p>
+        Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack...
+      </p>
+    </div>
+    <div class="box">
+      <h3>Third article</h3>
+      <p>
+        Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack...<br><br>
+        Cray food truck brunch, XOXO +1 keffiyeh pickled chambray.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

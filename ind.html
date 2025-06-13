@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blue Line Rectangle</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rectangle {
+      width: 300px;
+      height: 200px;
+      border: 2px solid blue;
+      position: relative;
+    }
+
+    .square {
+      width: 40px;
+      height: 40px;
+      border: 2px solid red;
+      position: absolute;
+    }
+
+    .top-left {
+      top: 0;
+      left: 0;
+    }
+
+    .top-right {
+      top: 0;
+      right: 0;
+    }
+
+    .bottom-left {
+      bottom: 0;
+      left: 0;
+    }
+
+    .bottom-right {
+      bottom: 0;
+      right: 0;
+    }
+
+    .circle {
+      width: 35px;
+      height: 35px;
+      border: 2px solid green;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .center-top {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .center-right {
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    .center-bottom {
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .center-left {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="rectangle">
+    <!-- Corner squares -->
+    <div class="square top-left"></div>
+    <div class="square top-right"></div>
+    <div class="square bottom-left"></div>
+    <div class="square bottom-right"></div>
+
+    <!-- Center-side circles -->
+    <div class="circle center-top"></div>
+    <div class="circle center-right"></div>
+    <div class="circle center-bottom"></div>
+    <div class="circle center-left"></div>
+  </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tooltip Example</title>
+  <style>
+    .button-wrapper {
+      position: relative; /* parent is the reference for absolute positioning */
+      display: inline-block;
+      margin: 100px;
+    }
+
+    .tooltip {
+      position: absolute;
+      bottom: 120%; /* move above the button */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      white-space: nowrap;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+    .button-wrapper:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-wrapper">
+    <button>Hover Me</button>
+    <div class="tooltip">This is a tooltip!</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Line Rectangle</title>
+    <style>
+        .rectangle {
+            width: 300px;
+            height: 200px;
+            border: 2px solid blue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .square {
+            width: 40px;
+            height: 40px;
+            border: 2px solid red;
+            position: absolute;
+        }
+        .top-left { top: 0; left: 0; }
+        .top-right { top: 0; right: 0; }
+        .bottom-left { bottom: 0; left: 0; }
+        .bottom-right { bottom: 0; right: 0; }
+
+        .circle {
+            width: 35px;
+            height: 35px;
+            border: 2px solid green;
+            border-radius: 50%;
+            position: fixed;
+        }
+
+        .center-top {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .center-right {
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+        .center-bottom {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .center-left {
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangle">
+        <!-- Corner squares -->
+        <div class="square top-left"></div>
+        <div class="square top-right"></div>
+        <div class="square bottom-left"></div>
+        <div class="square bottom-right"></div>
+
+        <!-- Center-side circles -->
+        <div class="circle center-top"></div>
+        <div class="circle center-right"></div>
+        <div class="circle center-bottom"></div>
+        <div class="circle center-left"></div>
+    </div>
+</body>
+</html>
